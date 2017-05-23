@@ -11,25 +11,26 @@ class List extends Component {
             nbLine : props.number,
     };
 
-    function getLines(nbLine) {
-
-        let i;
-
-        for (i=0; i<nbLine; i++){
-
-
-        }
-    }
-
 
         return;
     }
 
     render(){
 
+        function getLines(nbLine) {
+
+            let i;
+            var list = "";
+            let line = "<li></li>";
+
+            for (i=0; i<nbLine; i++){
+                list+=<Line/>
+            }
+            return list
+        }
         return (
             <ul>
-                <Line name = "test"/>
+                {getLines(this.state.nbLine)}
             </ul>
         )
 
