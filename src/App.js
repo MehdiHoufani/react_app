@@ -3,10 +3,10 @@
  */
 import React, {Component} from 'react';
 
-import AppHeader from './app-header';
-import AppFooter from './app-footer';
+import AppHeader from './components/app/app-header';
+import AppFooter from './components/app/app-footer';
 
-export class App extends Component{
+class App extends Component{
 
 
     render(){
@@ -23,4 +23,4 @@ export class App extends Component{
     }
 
 }
-
+ export default App;
